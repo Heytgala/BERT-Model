@@ -10,4 +10,7 @@ PRE-TRAINING MODEL:
 
 Fine-Tune Model:
 1) py -3.6 run_squad.py \ --vocab_file=./vocab.txt \ --bert_config_file=./bert_config.json \  --init_checkpoint=./bert_model.ckpt \ --do_train=True \ --train_file=./train-v1.1.json \ --do_predict=True \ --predict_file=./dev-v1.1.json \  --train_batch_size=12 \ --learning_rate=3e-5 \  --num_train_epochs=2.0 \ --max_seq_length=384 \ --doc_stride=128 \
- --output_dir=./squad_base/                                                                                      
+ --output_dir=./squad_base/  
+
+Sentence Classification:
+1) py -3.6 run_classifier.py \ --task_name=MRPC \ --do_train=true \ --do_eval=true \ --data_dir=./MRPC \ --vocab_file=./vocab.txt \ --bert_config_file=./bert_config.json \ --init_checkpoint=./bert_model.ckpt \ --max_seq_length=128 \ --train_batch_size=32 \ --learning_rate=2e-4 \ --num_train_epochs=1.0 \ --output_dir=./mrpc_output/                                                                                    
