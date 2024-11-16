@@ -13,4 +13,4 @@ Fine-Tune Model:
  --output_dir=./squad_base/  
 
 Sentence Classification:
-1) py -3.6 run_classifier.py \ --task_name=MRPC \ --do_train=true \ --do_eval=true \ --data_dir=./MRPC \ --vocab_file=./vocab.txt \ --bert_config_file=./bert_config.json \ --init_checkpoint=./bert_model.ckpt \ --max_seq_length=128 \ --train_batch_size=32 \ --learning_rate=2e-4 \ --num_train_epochs=1.0 \ --output_dir=./mrpc_output/                                                                                    
+1) py -3.6 run_classifier.py \ --task_name=MRPC \ --do_train=true \ --do_eval=true \ --data_dir=./MRPC \ --vocab_file=./vocab.txt \ --bert_config_file=./bert_config.json \ --init_checkpoint=./bert_model.ckpt \ --max_seq_length=128 \ --train_batch_size=32 \ --learning_rate=2e-4 \ --num_train_epochs=3.0 \ --output_dir=./mrpc_output/                                                                                    
