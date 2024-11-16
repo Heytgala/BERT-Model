@@ -17,3 +17,10 @@ Sentence Classification:
 
 --- MRPC Data ---
 https://github.com/MegEngine/Models/tree/master/official/nlp/bert/glue_data/MRPC
+
+--- MOVIE PREDICTION --- 
+1) py -3.6 -m pip install tensorflow==1.15.0
+2) py -3.6 -m pip install tensorflow-hub==0.7.0
+3) py -3.6 -m pip install bert-tensorflow
+4) py -3.6 -m pip install scikit-learn
+5) py -3.6 -m pip install pandas
