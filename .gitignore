@@ -1,3 +1,5 @@
+./squad_base/*record
+./squad_base/*ckpt*
 # Initially taken from Github's Python gitignore file
 
 # Byte-compiled / optimized / DLL files
